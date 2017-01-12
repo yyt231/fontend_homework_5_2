@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            position: absolute;
+            width: 350px;
+            height: 400px;
+            top: 50%;
+            left: 50%;
+            margin: -200px 0 0 -175px;
+            border: 1px solid #000000;
+        }
+
+        tr {
+            height: 50px;
+        }
+
+        td {
+            background: cadetblue;
+            width: 50px;
+            text-align: center;
+        }
+        span{
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+<table width="300">
+    <caption><h3>计算器</h3></caption>
+    <tbody>
+    <tr>
+        <td colspan="4" id="course">&nbsp;</td>
+
+    </tr>
+    <tr>
+        <td colspan="4" id="result">&nbsp;</td>
+
+    </tr>
+
+    <tr>
+        <td id="calc-sin" onclick="getSinResult()"><span>sin</span></td>
+        <td id="calc-cos" onclick="getCosResult()"><span>cos</span></td>
+        <td id="calc-tan" onclick="getTanResult()"><span>tan</span></td>
+        <td id="calc-clear" onclick="calcClear()"><span>清屏</span></td>
+    </tr>
+    <tr>
+        <td id="num7" onclick="num7()"><span>7</span></td>
+        <td id="num8" onclick="num8()"><span>8</span></td>
+        <td id="num9" onclick="num9()"><span>9</span></td>
+        <td id="multiply" onclick="multiply()"><span>X</span></td>
+
+    </tr>
+    <tr>
+        <td id="num4" onclick="num4()"><span>4</span></td>
+        <td id="num5" onclick="num5()"><span>5</span></td>
+        <td id="num6" onclick="num6()"><span>6</span></td>
+        <td id="minus" onclick="minus()"><span>-</span></td>
+
+    </tr>
+    <tr>
+        <td id="num1" onclick="num1()"><span>1</span></td>
+        <td id="num2" onclick="num2()"><span>2</span></td>
+        <td id="num3" onclick="num3()"><span>3</span></td>
+        <td id="add" onclick="add()"><span>+</span></td>
+    </tr>
+    <tr>
+        <td id="num0" onclick="num0()"><span>0</span></td>
+        <td id="point" onclick="point()"><span>.</span></td>
+        <td id="equal-to" onclick="getResult()"><span>=</span></td>
+        <td id="divider" onclick="divider()"><span>÷</span></td>
+    </tr>
+    </tbody>
+</table>
+<script src="js/calc.js"></script>
+</body>
+</html>
