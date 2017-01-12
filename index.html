@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link href="css/tb_init.css" rel="stylesheet" type="text/css"/>
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+
+
+</head>
+<body>
+<div class="container">
+    <table width="200" border="1">
+       <caption>计算器</caption>
+        <tbody>
+        <tr class="result">
+            <td colspan="4">
+                <p id="result">
+                    <span id="fristnum" class="fristnum"></span>
+                    <span id="calc-type" class="calc-type"></span>
+                    <span id="secondnum" class="secondnum"></span>
+                    <span class="equal-to">=</span>
+                    <span id="resultnum" class="resultnum"></span>
+                </p>
+            </td>
+
+        </tr>
+        <tr>
+            <td class="bg-blue"><span><input value="7" readonly id="seven"></span></td>
+            <td class="bg-blue"><span><input value="8" readonly id="eight"></span></td>
+            <td class="bg-blue"><span><input value="9" readonly id="nine"></span></td>
+            <td class="bg-orange"><span><input value="/" readonly id="divide"></span></td>
+        </tr>
+        <tr>
+            <td class="bg-blue"><span><input value="4" readonly id="four"></span></td>
+            <td class="bg-blue"><span><input value="5" readonly id="five"></span></td>
+            <td class="bg-blue"><span><input value="6" readonly id="six"></span></td>
+            <td class="bg-orange"><span><input value="*" readonly id="ride"></span></td>
+        </tr>
+        <tr>
+            <td class="bg-blue"><span><input value="1" readonly id="one"></span></td>
+            <td class="bg-blue"><span><input value="2" readonly id="two"></span></td>
+            <td class="bg-blue"><span><input value="3" readonly id="three"></span></td>
+            <td class="bg-orange"><span><input value="-" readonly id="reduce"></span></td>
+        </tr>
+        <tr>
+            <td class="bg-blue"><span><input value="0" readonly id="zero"></span></td>
+            <td class="bg-green"><span><input value="重置" readonly id="reset"></span></td>
+            <td class="bg-red"><span><input value="=" readonly id="equal-to"></span></td>
+            <td class="bg-orange"><span><input value="+" readonly id="plus"></span></td>
+        </tr>
+
+
+        </tbody>
+    </table>
+</div>
+<script type="text/javascript" src="js/simple_calc.js">
+
+</script>
+</body>
+</html>
